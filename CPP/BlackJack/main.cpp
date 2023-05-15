@@ -5,8 +5,8 @@
 using namespace std;
 
 struct Player{
-    int wager;
-    int handValue;
+    int wager= 0;
+    int handValue = 0;
     int winnings = 0;
     vector<string> hand;
     bool bust = false;
@@ -67,7 +67,7 @@ struct Player{
 };
 
 struct Dealer{
-    int handValue;
+    int handValue =0 ;
     vector<string> hand;
     bool bust = false;
     int calcHandValue(vector<string> & hand){
